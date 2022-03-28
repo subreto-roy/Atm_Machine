@@ -22,15 +22,15 @@ abstract class admin {
                 String Id = input.nextLine();
                 System.out.println("Enter User Name");
                 String name = input.nextLine();
-                System.out.println("Enter User Password");
-                String pass = input.nextLine();
+                //System.out.println("Enter User Password");
+                //String pass = input.nextLine();
                 System.out.println("Enter amount");
                 String amount = input.nextLine();
 
-                FileWriter file = new FileWriter("C:\\Users\\User\\Documents\\NetBeansProjects\\Design_project\\src\\main\\java\\data.txt");
+                FileWriter file = new FileWriter("C:\\Users\\User\\Documents\\NetBeansProjects\\Design_project\\src\\main\\java\\account.txt");
                 file.write(Id);
                 file.write(name);
-                file.write(pass);
+                //file.write(pass);
                 file.write(amount);
                 file.close();
             } else {
