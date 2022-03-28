@@ -5,7 +5,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class admin {
+abstract class admin {
 
     public void insert_data() throws FileNotFoundException, IOException {
         // System.out.println("cfjk");
@@ -33,9 +33,7 @@ public class admin {
                 file.write(pass);
                 file.write(amount);
                 file.close();
-            }
-            else
-            {
+            } else {
                 System.out.println("Wrong Information!");
             }
         } catch (IOException e) {
@@ -43,4 +41,7 @@ public class admin {
         }
 
     }
+    //abstract void WithDraw();
+    abstract void getLogin();
+    
 }
