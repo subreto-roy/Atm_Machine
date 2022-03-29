@@ -126,7 +126,7 @@ public class Account extends admin {
             if(line.contains(pID)){
               String strCurrentwithdraw = line.substring(line.lastIndexOf(" "), line.length());
               if(strCurrentwithdraw !=null || !strCurrentwithdraw.trim().isEmpty()){
-                  int replwithdraw = Integer.parseInt(strCurrentSalary.trim())-withdraw;
+                  int replwithdraw = Integer.parseInt(strCurrentwithdraw.trim())-withdraw;
                   System.out.println("Withdraw : " + replwithdraw);
                   line = line.substring(0,line.lastIndexOf( " "))+ replwithdraw;
               }
