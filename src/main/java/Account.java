@@ -124,11 +124,11 @@ public class Account extends admin {
         String line = null;
         while((line = br.readLine()) != null){
             if(line.contains(pID)){
-              String strCurrentSalary = line.substring(line.lastIndexOf(" "), line.length());
-              if(strCurrentSalary !=null || !strCurrentSalary.trim().isEmpty()){
-                  int replenishedSalary = Integer.parseInt(strCurrentSalary.trim())-withdraw;
-                  System.out.println("Withdraw : " + replenishedSalary);
-                  line = line.substring(0,line.lastIndexOf( " "))+ replenishedSalary;
+              String strCurrentwithdraw = line.substring(line.lastIndexOf(" "), line.length());
+              if(strCurrentwithdraw !=null || !strCurrentwithdraw.trim().isEmpty()){
+                  int replwithdraw = Integer.parseInt(strCurrentSalary.trim())-withdraw;
+                  System.out.println("Withdraw : " + replwithdraw);
+                  line = line.substring(0,line.lastIndexOf( " "))+ replwithdraw;
               }
               
             }
