@@ -13,63 +13,52 @@ import java.util.logging.Logger;
 
 public class Account extends admin {
 
-    //FileReader file;
     int balance, withdraw, deposite, num;
 
-    /*public Account() throws FileNotFoundException {
-        this.file = new FileReader("C:\\Users\\User\\Documents\\NetBeansProjects\\Design_project\\src\\main\\java\\account.txt");
-    }*/
-
     void getLogin() {
-        int x = 3;
 
-        while (x > 0) {
-            Scanner input = new Scanner(System.in);
-            //FileReader file =new FileReader("C:\\Users\\User\\Documents\\NetBeansProjects\\Design_project\\src\\main\\java\\data.txt");
+        Scanner input = new Scanner(System.in);
 
-            String u = "subroto";
-            String p = "123";
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Welcome to Atm machine");
 
-            Scanner sc = new Scanner(System.in);
-            System.out.println("Welcome to Atm machine");
-            System.out.println("Enter your UserName and password");
-            String user = input.nextLine();
-            String pass = input.nextLine();
-            if (u.equals(user) && p.equals(pass)) {
-                while (true) {
+        while (true) {
 
-                    System.out.println("1.withdraw");
-                    System.out.println("2.Check Balance");
-                    System.out.println("3.Exit");
-                    num = sc.nextInt();
+            System.out.println("1.withdraw");
+            System.out.println("2.Check Balance");
+            System.out.println("3.Exit");
+            num = sc.nextInt();
 
-                    switch (num) {
-                        case 1:
-                        {
-                            try {
-                                WithDraw();
-                            } catch (IOException ex) {
-                                Logger.getLogger(Account.class.getName()).log(Level.SEVERE, null, ex);
-                            }
-                        }
-                            break;
+            switch (num) {
+                case 1: {
 
-                        case 2:
-                            CheckBalance();
-                            break;
-                        case 3:
-                            System.exit(0);
-                            System.out.println("  ");
+                    withdraw wit = new withdraw();
+                    try {
+                        wit.WithDraw();
+                        //poly
+                        wit.CheckBalance();
+                    } catch (IOException ex) {
+                        Logger.getLogger(Account.class.getName()).log(Level.SEVERE, null, ex);
                     }
+
                 }
-            } else {
-                System.out.println("wrong password");
-                x--;
+                break;
+
+                case 2:
+                    CheckBalance ch = new CheckBalance();
+                    //poly
+                    ch.CheckBalance();
+                    break;
+
+                case 3:
+                    System.exit(0);
+                    System.out.println("  ");
             }
         }
     }
+}
 
-   /* void WithDraw() {
+/* void WithDraw() {
         BufferedReader bf = new BufferedReader(file);
         try {
 
@@ -102,9 +91,7 @@ public class Account extends admin {
             System.out.println("Error");
         }
     }*/
-    
-    
-    public void WithDraw() throws IOException{
+ /* public void WithDraw() throws IOException{
         
         String ID,Name;
         double salary;
@@ -124,11 +111,11 @@ public class Account extends admin {
         String line = null;
         while((line = br.readLine()) != null){
             if(line.contains(pID)){
-              String strCurrentwithdraw = line.substring(line.lastIndexOf(" "), line.length());
-              if(strCurrentwithdraw !=null || !strCurrentwithdraw.trim().isEmpty()){
-                  int replwithdraw = Integer.parseInt(strCurrentwithdraw.trim())-withdraw;
-                  System.out.println("Withdraw : " + replwithdraw);
-                  line = line.substring(0,line.lastIndexOf( " "))+ replwithdraw;
+              String strCurrentSalary = line.substring(line.lastIndexOf(" "), line.length());
+              if(strCurrentSalary !=null || !strCurrentSalary.trim().isEmpty()){
+                  int replenishedSalary = Integer.parseInt(strCurrentSalary.trim())-withdraw;
+                  System.out.println("Withdraw : " + replenishedSalary);
+                  line = line.substring(0,line.lastIndexOf( " "))+ replenishedSalary;
               }
               
             }
@@ -148,9 +135,8 @@ public class Account extends admin {
             System.out.println("Could not rename file");
         
         
-    }
-    public void CheckBalance() {
+    }*/
+ /* public void CheckBalance() {
         System.out.println("Balance of your Account is:    " + balance);
         System.out.println("  ");
-    }
-}
+    }*/

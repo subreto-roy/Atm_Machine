@@ -1,3 +1,1 @@
-A123 Anna2800
-A234 Alex 4000
-A986 Jame 5000
+A123 subroto 123 1000
