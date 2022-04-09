@@ -1,4 +1,7 @@
+package newpackage;
 
+//import CheckBalance;
+//import admin;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -10,6 +13,7 @@ import java.util.Scanner;
 import java.util.StringTokenizer;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+/*import withdraw;*/
 
 public class Account extends admin {
 

@@ -1,3 +1,5 @@
+
+package newpackage;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -23,7 +25,7 @@ abstract class admin {
                 text=input.nextLine();
                
               
-                FileWriter file = new FileWriter("C:\\Users\\User\\Documents\\NetBeansProjects\\Design_project\\src\\main\\java\\account.txt");
+                FileWriter file = new FileWriter("C:\\Users\\User\\Documents\\NetBeansProjects\\Design_project\\src\\main\\java\\newpackage\\account.txt");
              
                file.write(text);
                file.close();

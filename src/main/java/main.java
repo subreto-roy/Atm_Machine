@@ -1,4 +1,7 @@
 
+package newpackage;
+
+
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
@@ -10,7 +13,7 @@ public class main {
       
       admin ad;
       ad=new Account();
-     // ad.insert_data();
+      ad.insert_data();
       ad.getLogin();
       
       

@@ -1,4 +1,7 @@
 
+package newpackage;
+
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -25,7 +28,7 @@ public class withdraw {
         System.out.println("Enter Withdraw amount: ");
         withdraw = console.nextInt();
 
-        File originalFile = new File("C:\\Users\\User\\Documents\\NetBeansProjects\\Design_project\\src\\main\\java\\account.txt");
+        File originalFile = new File("C:\\Users\\User\\Documents\\NetBeansProjects\\Design_project\\src\\main\\java\\newpackage\\account.txt");
         BufferedReader br = new BufferedReader(new FileReader(originalFile));
 
         File tempFile = new File("tempfile.txt");
@@ -83,4 +86,7 @@ public class withdraw {
        
          System.out.println("Reaming Balance :" + sum);
     }
+     private void CheckBalance2(){
+          System.out.println("Reaming Balance :" + sum);
+     }
 }
