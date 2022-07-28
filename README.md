@@ -1,20 +1,4 @@
-Table of Content
-1. Individual Contributions Breakdown ………………………………………..	3
-2.  Statement of Requirements ………………………………….….…………     	4
-1.1 Statement              ………………………………………………….    	4   	
-3. Glossary of Terms …………………………………………………………....	4
-4.  System Requirements ……………………………………………................    	5
-4.1 Enumerated Functional Requirements ……………………………....	5
-4.2 Enumerated Nonfunctional Requirements ………………………….	5
-5. Functional Requirements Specification ........................................................	6
-5.1 Stakeholders ………………………………………………………….	6
-5.2 Actors and Goals …………………………………………………….	6
-6. Class Diagrams and Interface Specification ………………………………	6
-6.1 Class Diagrams ……………………………………………………...	7
-6.2 DataTypes and Operation Signatures ………………………………..	7-10
-7. Conclusion ……………………..……………………………………………	10
-
-1.     Statement of Requirements
+1.Statement of Requirements
 1.1 Problem Statement:What Is an Automated Teller Machine (ATM)? An ATM is basically  a computer where you can check your account balance,  withdraw cash and access other financial services. This machine eliminates the need to interact with a human teller for many basic banking needs.An automatic teller machine accepts a cash card, interacts with the user, communicates with the central system to carry out the transaction, cash, and prints receipts. The system requires appropriate recordkeeping and security provisions. The system must handle concurrent access to the same account correctly. We design the software for the ATM machines.The cost of the shared system will be apportioned to the banks according to the number of customers with cash cards. In our ATM machine project we have used withdraw,check balance,password change and activity log features
 
 2. Glossary of Terms:
