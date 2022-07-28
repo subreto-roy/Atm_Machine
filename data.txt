@@ -1,0 +1,7 @@
+A123 withdraw 100 amount Fri May 20 12:08:51 BDT 2022
+B233 withdraw 100 amount Fri May 20 12:11:15 BDT 2022
+B233 withdraw 100 amount Fri May 20 12:12:56 BDT 2022
+A123 withdraw 100 amount Fri May 20 13:01:19 BDT 2022
+A123 Balance_Check 200 amount Fri May 20 13:01:33 BDT 2022
+A123 withdraw 100 amount Fri May 20 13:14:39 BDT 2022
+A123 Balance_Check 8900 amount Fri May 20 13:14:52 BDT 2022
